@@ -1,4 +1,4 @@
 </p>
 <p align = "center">
-<img  src=Img/Principal.png >
+<img  src=Img/giphy.gif >
 <p>
