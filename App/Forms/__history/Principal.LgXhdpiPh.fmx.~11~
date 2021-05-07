@@ -1,0 +1,22 @@
+inherited Form1_LgXhdpiPh: TForm1_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 3
+  inherited Header: TALLayout
+    Size.Width = 450.000000000000000000
+    inherited Rectangle1: TRectangle
+      Size.Width = 450.000000000000000000
+    end
+    inherited Label1: TLabel
+      Size.Width = 450.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+    end
+  end
+  inherited Footer: TALLayout
+    Position.Y = 671.000000000000000000
+    Size.Width = 450.000000000000000000
+    inherited ALRectangle1: TALRectangle
+      Size.Width = 450.000000000000000000
+    end
+  end
+end

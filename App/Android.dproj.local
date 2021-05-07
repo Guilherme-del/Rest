@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2018/04/05 10:00:15.000.727,=C:\Users\DXE5\Desktop\Projetos\Unit1.pas</Transaction>
+    <Transaction>2018/04/13 10:32:05.000.965,=C:\Users\DXE5\Desktop\Projetos\Unit1.pas</Transaction>
+    <Transaction>2018/04/13 10:32:16.000.468,=C:\Users\DXE5\Desktop\Projetos\Unit1.pas</Transaction>
+    <Transaction>2018/08/27 09:53:05.000.392,=C:\Users\DXE5\Desktop\Projetos\Unit1.pas</Transaction>
+    <Transaction>2019/10/10 13:25:48.000.168,=C:\Users\DXE5\Desktop\Projetos\Unit1.pas</Transaction>
+    <Transaction>2020/03/06 13:03:59.000.937,=C:\Users\DXE5\Desktop\Projetos\Unit1.pas</Transaction>
+    <Transaction>2020/04/23 12:58:49.000.626,=C:\Users\DXE5\Desktop\Projetos\Unit1.pas</Transaction>
+    <Transaction>2020/08/27 15:43:47.000.214,=C:\Users\DXE5\Desktop\Projetos\Unit1.pas</Transaction>
+    <Transaction>2021/04/26 09:08:22.000.979,=C:\Users\DXE5\Desktop\Projetos\Unit1.pas</Transaction>
+    <Transaction>2021/04/26 09:09:33.000.120,C:\Users\DXE5\Desktop\Android Crud\App\Principal.fmx=C:\Users\DXE5\Desktop\Projetos\Unit1.fmx</Transaction>
+    <Transaction>2021/04/26 09:09:33.000.120,C:\Users\DXE5\Desktop\Android Crud\App\Principal.pas=C:\Users\DXE5\Desktop\Projetos\Unit1.pas</Transaction>
+    <Transaction>2021/04/26 09:09:55.000.690,C:\Users\DXE5\Desktop\Android Crud\App\Android.dproj=C:\Users\DXE5\Desktop\Projetos\Project2.dproj</Transaction>
+    <Transaction>2021/04/27 13:05:24.000.213,=C:\Users\DXE5\Desktop\Android Crud\App\Forms\Principal.pas</Transaction>
+    <Transaction>2021/04/28 09:32:33.000.914,=C:\Users\DXE5\Desktop\Android Crud\App\Unit2.pas</Transaction>
+    <Transaction>2021/04/28 09:32:49.000.354,C:\Users\DXE5\Desktop\Android Crud\App\Forms\frmSplash.pas=C:\Users\DXE5\Desktop\Android Crud\App\Unit2.pas</Transaction>
+    <Transaction>2021/04/28 09:32:49.000.354,C:\Users\DXE5\Desktop\Android Crud\App\Forms\frmSplash.fmx=C:\Users\DXE5\Desktop\Android Crud\App\Unit2.fmx</Transaction>
+    <Transaction>2021/04/28 10:09:15.000.098,C:\Users\DXE5\Desktop\Android Crud\App\Forms\frmSplash.pas=</Transaction>
+    <Transaction>2021/04/28 10:53:02.000.764,=C:\Users\DXE5\Desktop\Android Crud\App\Forms\Login.pas</Transaction>
+    <Transaction>2021/04/28 10:57:22.000.807,C:\Users\DXE5\Desktop\Android Crud\App\Forms\Login.pas=</Transaction>
+    <Transaction>2021/04/28 10:57:48.000.127,=C:\Users\DXE5\Desktop\Android Crud\App\Forms\Login.pas</Transaction>
+    <Transaction>2021/04/28 10:58:02.000.542,C:\Users\DXE5\Desktop\Android Crud\App\Forms\Login.pas=</Transaction>
+    <Transaction>2021/04/28 13:34:11.000.592,C:\Users\DXE5\Desktop\Android Crud\App\Crud.dproj=C:\Users\DXE5\Desktop\Android Crud\App\Android.dproj</Transaction>
+    <Transaction>2021/04/28 13:34:37.000.229,C:\Users\DXE5\Desktop\Android Crud\App\CrudAndroid.dproj=C:\Users\DXE5\Desktop\Android Crud\App\Crud.dproj</Transaction>
+    <Transaction>2021/04/28 13:41:20.000.076,C:\Users\DXE5\Desktop\Android Crud\App\Android.dproj=C:\Users\DXE5\Desktop\Android Crud\App\CrudAndroid.dproj</Transaction>
+    <Transaction>2021/04/28 15:01:59.000.723,=C:\Users\DXE5\Desktop\Android Crud\App\Unit1.pas</Transaction>
+    <Transaction>2021/04/28 15:02:13.000.467,C:\Users\DXE5\Desktop\Android Crud\App\Unit1.pas=C:\Users\DXE5\Desktop\Android Crud\App\frmDialog.pas</Transaction>
+    <Transaction>2021/04/28 15:02:21.000.713,C:\Users\DXE5\Desktop\Android Crud\App\frmDialog.pas=</Transaction>
+    <Transaction>2021/04/28 15:02:30.000.658,=C:\Users\DXE5\Desktop\Android Crud\App\Unit1.pas</Transaction>
+    <Transaction>2021/04/28 15:03:00.000.494,C:\Users\DXE5\Desktop\Android Crud\App\Unit1.fmx=C:\Users\DXE5\Desktop\Android Crud\App\frmDialog.fmx</Transaction>
+    <Transaction>2021/04/28 15:03:00.000.494,C:\Users\DXE5\Desktop\Android Crud\App\Unit1.pas=C:\Users\DXE5\Desktop\Android Crud\App\frmDialog.pas</Transaction>
+    <Transaction>2021/04/28 15:25:52.000.753,=C:\Users\DXE5\Desktop\Android Crud\App\Forms\frmDialog.pas</Transaction>
+    <Transaction>2021/04/28 16:04:10.000.165,C:\Users\DXE5\Desktop\Android Crud\App\Forms\frmDialog.pas=</Transaction>
+    <Transaction>2021/04/28 16:05:14.000.511,=C:\Users\DXE5\Desktop\Android Crud\App\Forms\frmDialog.pas</Transaction>
+    <Transaction>2021/04/28 16:42:00.000.489,C:\Users\DXE5\Desktop\Android Crud\App\Forms\frmDialog.pas=</Transaction>
+    <Transaction>2021/04/28 16:57:31.000.061,=C:\Users\DXE5\Desktop\Android Crud\App\Unit1.pas</Transaction>
+    <Transaction>2021/04/28 16:58:39.000.041,C:\Users\DXE5\Desktop\Android Crud\App\Unit1.pas=C:\Users\DXE5\Desktop\Android Crud\App\Forms\MainFrame.pas</Transaction>
+    <Transaction>2021/04/28 16:58:39.000.041,C:\Users\DXE5\Desktop\Android Crud\App\Unit1.fmx=C:\Users\DXE5\Desktop\Android Crud\App\Forms\MainFrame.fmx</Transaction>
+    <Transaction>2021/05/03 14:36:23.000.243,=C:\Users\DXE5\Desktop\Android Crud\App\Unit1.pas</Transaction>
+    <Transaction>2021/05/03 14:36:38.000.608,=C:\Users\DXE5\Desktop\Android Crud\App\Unit1.pas</Transaction>
+    <Transaction>2021/05/03 14:37:09.000.364,C:\Users\DXE5\Desktop\Android Crud\App\Forms\Cadastros.fmx=C:\Users\DXE5\Desktop\Android Crud\App\Unit1.fmx</Transaction>
+    <Transaction>2021/05/03 14:37:09.000.364,C:\Users\DXE5\Desktop\Android Crud\App\Forms\Cadastros.pas=C:\Users\DXE5\Desktop\Android Crud\App\Unit1.pas</Transaction>
+    <Transaction>2021/05/03 15:04:49.000.394,=C:\Users\DXE5\Desktop\Android Crud\App\Unit1.pas</Transaction>
+    <Transaction>2021/05/03 15:05:20.000.480,C:\Users\DXE5\Desktop\Android Crud\App\Unit1.dfm=C:\Users\DXE5\Desktop\Android Crud\App\dmTabelas.dfm</Transaction>
+    <Transaction>2021/05/03 15:05:20.000.480,C:\Users\DXE5\Desktop\Android Crud\App\Unit1.pas=C:\Users\DXE5\Desktop\Android Crud\App\dmTabelas.pas</Transaction>
+    <Transaction>2021/05/03 15:10:13.000.543,C:\Users\DXE5\Desktop\Android Crud\App\dmTabelas.pas=</Transaction>
+    <Transaction>2021/05/03 15:10:18.000.401,=C:\Users\DXE5\Desktop\Android Crud\App\Unit1.pas</Transaction>
+    <Transaction>2021/05/03 15:10:39.000.753,=C:\Users\DXE5\Desktop\Android Crud\App\Unit1.pas</Transaction>
+    <Transaction>2021/05/03 15:11:06.000.689,C:\Users\DXE5\Desktop\Android Crud\App\Forms\DmTabelas.pas=C:\Users\DXE5\Desktop\Android Crud\App\Unit1.pas</Transaction>
+    <Transaction>2021/05/03 15:11:06.000.689,C:\Users\DXE5\Desktop\Android Crud\App\Forms\DmTabelas.dfm=C:\Users\DXE5\Desktop\Android Crud\App\Unit1.dfm</Transaction>
+    <Transaction>2021/05/03 15:11:44.000.071,=C:\Users\DXE5\Desktop\Android Crud\App\Unit1.pas</Transaction>
+    <Transaction>2021/05/03 15:12:14.000.571,C:\Users\DXE5\Desktop\Android Crud\App\Forms\FrmcadFunc.pas=C:\Users\DXE5\Desktop\Android Crud\App\Unit1.pas</Transaction>
+    <Transaction>2021/05/03 15:12:14.000.571,C:\Users\DXE5\Desktop\Android Crud\App\Forms\FrmcadFunc.fmx=C:\Users\DXE5\Desktop\Android Crud\App\Unit1.fmx</Transaction>
+    <Transaction>2021/05/04 08:41:13.000.683,=C:\Users\DXE5\Desktop\Android Crud\App\Unit1.pas</Transaction>
+    <Transaction>2021/05/04 08:43:04.000.356,C:\Users\DXE5\Desktop\Android Crud\App\Forms\Manutencao.pas=C:\Users\DXE5\Desktop\Android Crud\App\Unit1.pas</Transaction>
+    <Transaction>2021/05/04 08:43:04.000.356,C:\Users\DXE5\Desktop\Android Crud\App\Forms\Manutencao.fmx=C:\Users\DXE5\Desktop\Android Crud\App\Unit1.fmx</Transaction>
+  </Transactions>
+	<BT_BuildType>Debug</BT_BuildType>
+	<ActiveMobileDevice>
+		<NoProfile Android=""/>
+	</ActiveMobileDevice>
+</BorlandProject>

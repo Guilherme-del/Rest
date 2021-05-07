@@ -1,0 +1,15 @@
+inherited Form1_NmXhdpiPh: TForm1_NmXhdpiPh
+  ClientHeight = 615
+  ClientWidth = 400
+  DesignerMasterStyle = 3
+  inherited ALLayout1: TALLayout
+    Size.Width = 400.000000000000000000
+    inherited Label1: TLabel [0]
+      Size.Width = 400.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+    end
+    inherited Rectangle1: TRectangle [1]
+      Size.Width = 400.000000000000000000
+    end
+  end
+end

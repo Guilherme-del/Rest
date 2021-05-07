@@ -1,0 +1,13 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'SplashScreen'
+  ClientHeight = 480
+  ClientWidth = 400
+  SystemStatusBar.BackgroundColor = claSnow
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [iPhone, iPad]
+  FullScreen = True
+  DesignerMasterStyle = 0
+end

@@ -1,0 +1,12 @@
+inherited Form1_LgXhdpiPh: TForm1_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 3
+  inherited ALLayout1: TALLayout
+    Size.Width = 450.000000000000000000
+    inherited Label1: TLabel
+      Size.Width = 450.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+    end
+  end
+end

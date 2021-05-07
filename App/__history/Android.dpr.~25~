@@ -1,0 +1,17 @@
+program Android;
+
+uses
+  System.StartUpCopy,
+  FMX.Forms,
+  Principal in 'Forms\Principal.pas' {frmPrincipal},
+  MainFrame in 'Forms\MainFrame.pas' {FrmMainFrame},
+  Cadastros in 'Forms\Cadastros.pas' {FrmCad};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TfrmPrincipal, frmPrincipal);
+  Application.CreateForm(TFrmCad, FrmCad);
+  Application.Run;
+end.

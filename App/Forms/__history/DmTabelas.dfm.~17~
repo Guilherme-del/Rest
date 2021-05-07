@@ -1,0 +1,50 @@
+object DmTabela: TDmTabela
+  OldCreateOrder = False
+  Height = 331
+  Width = 580
+  object HTTPBasicAuthenticator1: THTTPBasicAuthenticator
+    Username = 'SYSDBA'
+    Password = '!@ab#$cs'
+    Left = 112
+    Top = 163
+  end
+  object RESTResponse1: TRESTResponse
+    ContentType = 'application/json'
+    ContentEncoding = 'utf-8'
+    Left = 32
+    Top = 43
+  end
+  object RESTRequest1: TRESTRequest
+    Client = RESTClient1
+    Params = <
+      item
+        name = 'codigo'
+        Value = '1078-5'
+      end>
+    Response = RESTResponse1
+    SynchronizedEvents = False
+    Left = 32
+    Top = 115
+  end
+  object DataSource1: TDataSource
+    DataSet = qryFunc
+    Left = 296
+    Top = 163
+  end
+  object RESTClient1: TRESTClient
+    Authenticator = HTTPBasicAuthenticator1
+    Accept = 'application/json, text/plain; q=0.9, text/html;q=0.8,'
+    AcceptCharset = 'UTF-8, *;q=0.8'
+    BaseURL = 'http://127.0.0.1:8082/SE1/getemployee'
+    Params = <>
+    HandleRedirects = True
+    RaiseExceptionOn500 = False
+    Left = 112
+    Top = 43
+  end
+  object qryFunc: TFDQuery
+    FetchOptions.AssignedValues = [evMode]
+    Left = 368
+    Top = 160
+  end
+end

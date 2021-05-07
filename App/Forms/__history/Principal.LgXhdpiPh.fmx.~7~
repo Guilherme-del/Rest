@@ -1,0 +1,19 @@
+inherited Form1_LgXhdpiPh: TForm1_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 3
+  inherited btnLogin: TButton
+    OnClick = nil
+    inherited Image2: TImage
+      MultiResBitmap.Height = 128
+      MultiResBitmap.Width = 128
+    end
+  end
+  inherited btnCancelaCliente: TButton
+    OnClick = nil
+    inherited Image12: TImage
+      MultiResBitmap.Height = 128
+      MultiResBitmap.Width = 128
+    end
+  end
+end
