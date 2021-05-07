@@ -1,0 +1,36 @@
+unit Erro;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, JvExControls, JvXPCore, JvXPButtons, ExtCtrls,
+  StdCtrls, Buttons, AdvGlowButton, frxpngimage;
+
+type
+  TfrmErro = class(TForm)
+    lblMensagem: TLabel;
+    Image1: TImage;
+    btnOk: TAdvGlowButton;
+    procedure FormShow(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmErro: TfrmErro;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmErro.FormShow(Sender: TObject);
+begin
+  frmErro.Width := lblMensagem.Width + 90;
+  frmErro.Height := frmErro.Height-16+lblMensagem.Height;
+  btnOK.Left    := Trunc(frmErro.Width/2) - Trunc( btnOK.Width/2);
+end;
+
+end.

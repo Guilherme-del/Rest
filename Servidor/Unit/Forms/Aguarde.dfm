@@ -1,0 +1,41 @@
+object frmAguarde: TfrmAguarde
+  Left = 382
+  Top = 298
+  BorderStyle = bsNone
+  Caption = 'frmAguarde'
+  ClientHeight = 46
+  ClientWidth = 613
+  Color = 14474460
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  FormStyle = fsStayOnTop
+  OldCreateOrder = False
+  Position = poMainFormCenter
+  PixelsPerInch = 96
+  TextHeight = 13
+  object lblMsg: TPanel
+    Left = 0
+    Top = 0
+    Width = 613
+    Height = 46
+    Align = alClient
+    BevelOuter = bvNone
+    BorderWidth = 3
+    BorderStyle = bsSingle
+    Caption = 'Aguarde, '
+    Color = 14474460
+    Ctl3D = False
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clRed
+    Font.Height = -27
+    Font.Name = 'Arial'
+    Font.Style = [fsBold]
+    ParentBackground = False
+    ParentCtl3D = False
+    ParentFont = False
+    TabOrder = 0
+  end
+end
