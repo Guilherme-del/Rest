@@ -617,7 +617,7 @@ IMPLEMENTATION
       ConnectionDefs.HostName := 'localhost';
       ConnectionDefs.dbPort := 3050;
       ConnectionDefs.Username := 'sysdba';
-      ConnectionDefs.Password := 'ENCRIPTED';
+      ConnectionDefs.Password := 'ENCRIPTEDED';
     end;
 
   function TServerMethodDM.retornoPadrao(Retorno, Descricao: String)
