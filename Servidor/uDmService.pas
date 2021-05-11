@@ -452,7 +452,7 @@ IMPLEMENTATION
             JSONObj.AddPair(TJSONPair.Create('RETORNO',
                 TJSONString.Create('404')));
             JSONObj.AddPair(TJSONPair.Create('DESCRICAO',
-                TJSONString.Create('Usuario ou senha inválidos')));
+                TJSONString.Create('Usuario ou senha invÃ¡lidos')));
             Result := JSONObj.ToString;
             JSONObj.Free;
           end;
@@ -617,7 +617,7 @@ IMPLEMENTATION
       ConnectionDefs.HostName := 'localhost';
       ConnectionDefs.dbPort := 3050;
       ConnectionDefs.Username := 'sysdba';
-      ConnectionDefs.Password := '!@ab#$cs';
+      ConnectionDefs.Password := 'ENCRIPTED';
     end;
 
   function TServerMethodDM.retornoPadrao(Retorno, Descricao: String)
@@ -636,8 +636,8 @@ IMPLEMENTATION
   procedure TServerMethodDM.ServerMethodDataModuleMassiveProcess
     (var MassiveDataset: TMassiveDatasetBuffer; var Ignore: Boolean);
     begin
-      // Esse código é para manipular o evento nao permitindo que sejam alteradas por massive outras
-      // tabelas diferentes de employee e se você alterar o campo last_name no client ele substitui o valor
+      // Esse cÃ³digo Ã© para manipular o evento nao permitindo que sejam alteradas por massive outras
+      // tabelas diferentes de employee e se vocÃª alterar o campo last_name no client ele substitui o valor
       // pelo valor setado abaixo
 
       Ignore := (MassiveDataset.MassiveMode in [mmInsert, mmUpdate, mmDelete])
