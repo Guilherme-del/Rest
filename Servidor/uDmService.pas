@@ -506,19 +506,89 @@ IMPLEMENTATION
                 'dd/mm/yyyy', '.');
               Result := JSONValue.ToJson;
             end;
-
-         rtPost:
+          rtPost:
             begin
-              qryInsFunc.Close;
-              qryInsFunc.Open;
+              JSONObj := recebeParametros(Params, 'Transportadora');
+                try
+                  // showmessage(jsonobj.tojson) ;
 
-              JSONValue.Encoding := Encoding;
+                  qryInsFunc.ParamByName('NOME').Value :=
+                    JSONObj.GetValue<string>('NOME');
 
-              JSONValue.LoadFromDataset('', qryInsFunc, False, Params.JsonMode,
-                'dd/mm/yyyy', '.');
-              Result := JSONValue.ToJson;
+                  if (JSONObj.GetValue('CNPJ') <> nil) then
+                    begin
+                      qryInsFunc.ParamByName('CNPJ').Value :=
+                        JSONObj.GetValue<String>('CNPJ');
+                    end;
+
+                  if (JSONObj.GetValue('LOGRADOURO') <> nil) then
+                    begin
+                      qryInsFunc.ParamByName('LOGRADOURO').Value :=
+                        JSONObj.GetValue<string>('LOGRADOURO');
+                    end;
+
+                  if (JSONObj.GetValue('CIDADE') <> nil) then
+                    begin
+                      qryInsFunc.ParamByName('CIDADE').Value :=
+                        JSONObj.GetValue<string>('CIDADE');
+                    end;
+
+                  if (JSONObj.GetValue('BAIRRO') <> nil) then
+                    begin
+                      qryInsFunc.ParamByName('BAIRRO').Value :=
+                        JSONObj.GetValue<string>('BAIRRO');
+                    end;
+
+                  if (JSONObj.GetValue('ESTADO') <> nil) then
+                    begin
+                      qryInsFunc.ParamByName('ESTADO').Value :=
+                        JSONObj.GetValue<String>('ESTADO');
+                    end;
+
+                  if (JSONObj.GetValue('CEP') <> nil) then
+                    begin
+                      qryInsFunc.ParamByName('CEP').Value :=
+                        JSONObj.GetValue<String>('CEP');
+                    end;
+
+                  if (JSONObj.GetValue('TELEFONE') <> nil) then
+                    begin
+                      qryInsFunc.ParamByName('TELEFONE').Value :=
+                        JSONObj.GetValue<String>('TELEFONE');
+                    end;
+
+                  if (JSONObj.GetValue('CONTATO') <> nil) then
+                    begin
+                      qryInsFunc.ParamByName('CONTATO').Value :=
+                        JSONObj.GetValue<String>('CONTATO');
+                    end;
+
+                  if (JSONObj.GetValue('IE') <> nil) then
+                    begin
+                      qryInsFunc.ParamByName('IE').Value :=
+                        JSONObj.GetValue<String>('IE');
+                    end;
+
+                  if (JSONObj.GetValue('COMPLEMENTO') <> nil) then
+                    begin
+                      qryInsFunc.ParamByName('COMPLEMENTO').Value :=
+                        JSONObj.GetValue<String>('COMPLEMENTO');
+                    end;
+
+                  if (JSONObj.GetValue('NUMERO') <> nil) then
+                    begin
+                      qryInsFunc.ParamByName('NUMERO').Value :=
+                        JSONObj.GetValue<String>('NUMERO');
+                    end;
+
+                  qryInsFunc.ExecSql;
+                  FDTransaction1.CommitRetaining;
+                except
+                 qryinsFunc.CancelUpdates;
+                  FDTransaction1.RollbackRetaining;
+                end;
             end;
-
+           
         end;
       except
         on E: Exception do
