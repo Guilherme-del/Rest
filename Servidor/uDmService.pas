@@ -508,7 +508,6 @@ IMPLEMENTATION
               JSONObj := recebeParametros(Params, 'Transportadora');
                 try
                   // showmessage(jsonobj.tojson) ;
-
                   qryInsFunc.ParamByName('NOME').Value :=
                     JSONObj.GetValue<string>('NOME');
 
