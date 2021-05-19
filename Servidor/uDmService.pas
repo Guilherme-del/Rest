@@ -388,15 +388,12 @@ IMPLEMENTATION
       // statusToken: Integer;
     begin
 
-      parametros := Params.ItemsString['UNDEFINED'].AsString;
-
-      // showMessage(parametros);
+      parametros := Params.ItemsString['UNDEFINED'].AsString;  
       JsonStream := TStringStream.Create(parametros, TEncoding.UTF8, False);
-      // JsonStream := TStringStream.Create(parametros);
       JSONObj := TJSONObject.Create;
       JSONObj.Parse(JsonStream.Bytes, 0);
-      // Token := JSONObj.GetValue<String>('Auth');
-
+      Result := JSONObj;
+ 
       if Modulo = '' then
         begin
           tipoReq := JSONObj.GetValue<String>('request');
