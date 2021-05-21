@@ -576,15 +576,115 @@ IMPLEMENTATION
                       qryInsFunc.ParamByName('NUMERO').Value :=
                         JSONObj.GetValue<String>('NUMERO');
                     end;
-
                   qryInsFunc.ExecSql;
                   FDTransaction1.CommitRetaining;
                 except
                  qryinsFunc.CancelUpdates;
                   FDTransaction1.RollbackRetaining;
-                end;
+                end;               
             end;
-           
+             rtPut:
+                begin
+                  JSONObj := recebeParametros(Params, 'Transportadora');
+                  try
+                    //showMessage(JSONObj.ToJson);
+                    if (JSONObj.GetValue('NOME') <> nil) then
+                      begin
+                        qryUpFunc.ParamByName('NOME').Value :=
+                          JSONObj.GetValue<String>('NOME');
+                      end;
+
+                    if (JSONObj.GetValue('CNPJ') <> nil) then
+                      begin
+                        qryUpFunc.ParamByName('CNPJ').Value :=
+                          JSONObj.GetValue<String>('CNPJ');
+                      end;
+
+                    if (JSONObj.GetValue('LOGRADOURO') <> nil) then
+                      begin
+                        qryUpFunc.ParamByName('LOGRADOURO').Value :=
+                          JSONObj.GetValue<String>('LOGRADOURO');
+                      end;
+
+                    if (JSONObj.GetValue('CIDADE') <> nil) then
+                      begin
+                        qryUpFunc.ParamByName('CIDADE').Value :=
+                          JSONObj.GetValue<String>('CIDADE');
+                      end;
+
+                    if (JSONObj.GetValue('BAIRRO') <> nil) then
+                      begin
+                        qryUpFunc.ParamByName('BAIRRO').Value :=
+                          JSONObj.GetValue<String>('BAIRRO');
+                      end;
+
+                    if (JSONObj.GetValue('ESTADO') <> nil) then
+                      begin
+                        qryUpFunc.ParamByName('ESTADO').Value :=
+                          JSONObj.GetValue<String>('ESTADO');
+                      end;
+
+                    if (JSONObj.GetValue('CEP') <> nil) then
+                      begin
+                        qryUpFunc.ParamByName('CEP').Value :=
+                          JSONObj.GetValue<String>('CEP');
+                      end;
+
+                    if (JSONObj.GetValue('TELEFONE') <> nil) then
+                      begin
+                        qryUpFunc.ParamByName('TELEFONE').Value :=
+                          JSONObj.GetValue<String>('TELEFONE');
+                      end;
+
+                    if (JSONObj.GetValue('IE') <> nil) then
+                      begin
+                        qryUpFunc.ParamByName('IE').Value :=
+                          JSONObj.GetValue<String>('IE');
+                      end;
+
+                    if (JSONObj.GetValue('COMPLEMENTO') <> nil) then
+                      begin
+                        qryUpFunc.ParamByName('COMPLEMENTO').Value :=
+                          JSONObj.GetValue<String>('COMPLEMENTO');
+                      end;
+
+                    if (JSONObj.GetValue('NUMERO') <> nil) then
+                      begin
+                        qryUpFunc.ParamByName('NUMERO').Value :=
+                          JSONObj.GetValue<String>('NUMERO');
+                      end;
+
+                      qryUpFunc.sql.add('ID = :ID');
+                        qryUpFunc.ParamByName('ID').Value :=
+                      JSONObj.GetValue<Integer>('ID');
+
+                      qryUpFunc.SQL.Add (' WHERE ID = :ID');
+
+                      qryUpFunc.ExecSql;
+                      FDTransaction1.CommitRetaining;
+
+                  except
+                  qryUpFunc.CancelUpdates;
+                  FDTransaction1.RollbackRetaining;
+                  end;
+                end;
+                
+              rtDelete:
+                begin
+                  JSONObj := recebeParametros(Params, 'Transportadora');
+                  try
+                    //Showmessage(Jsonobj.tojson);
+
+                    qryDelFunc.ParamByName('ID').Value :=
+                      JSONObj.GetValue<Integer>('ID');
+
+                    qryDelFunc.ExecSql;
+                    FDTransaction1.CommitRetaining;
+                  except
+                    qryUpFunc.CancelUpdates;
+                    FDTransaction1.RollbackRetaining;
+                  end;
+                end;
         end;
       except
         on E: Exception do
