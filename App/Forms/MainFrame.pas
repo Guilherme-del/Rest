@@ -20,12 +20,12 @@ interface
       Button1: TButton;
       Button2: TButton;
       Button3: TButton;
-      Button4: TButton;
       MaskedImage2: TMaskedImage;
       procedure Button4Click(Sender: TObject);
       procedure Button2Click(Sender: TObject);
       procedure Button1Click(Sender: TObject);
       procedure Button3Click(Sender: TObject);
+      procedure MaskedImage2Click(Sender: TObject);
       private
         { Private declarations }
       public
@@ -62,7 +62,12 @@ implementation
   procedure TFrmMainFrame.Button4Click(Sender: TObject);
     begin
       FrmMainFrame.Close;
-      FrmPrincipal.Show;
+      FrmPrincipal.show;
+    end;
+
+  procedure TFrmMainFrame.MaskedImage2Click(Sender: TObject);
+    begin
+      FrmMainFrame.Close;
     end;
 
 end.

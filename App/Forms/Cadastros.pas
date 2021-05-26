@@ -16,17 +16,17 @@ interface
       ALRectangle1: TALRectangle;
       ALRectangle2: TALRectangle;
       MaskedImage1: TMaskedImage;
-      Button3: TButton;
-      Button4: TButton;
+    btnFunc: TButton;
       Button5: TButton;
       Button6: TButton;
       MaskedImage2: TMaskedImage;
-      MaskedImage3: TMaskedImage;
+    MaskedImage3: TMaskedImage;
       procedure Button4Click(Sender: TObject);
       procedure MaskedImage2Click(Sender: TObject);
       procedure Button6Click(Sender: TObject);
-      procedure Button3Click(Sender: TObject);
+      procedure btnFuncClick(Sender: TObject);
       procedure Button5Click(Sender: TObject);
+    procedure MaskedImage3Click(Sender: TObject);
       private
         { Private declarations }
       public
@@ -42,7 +42,7 @@ implementation
 
   uses MainFrame, Principal, FrmcadFunc, DmTabelas, Manutencao;
 
-  procedure TFrmCad.Button3Click(Sender: TObject);
+  procedure TFrmCad.btnFuncClick(Sender: TObject);
     begin
       application.CreateForm(TfrmManu, frmManu);
       frmManu.show;
@@ -70,5 +70,10 @@ implementation
       frmPrincipal.show;
       FrmCad.Close;
     end;
+
+procedure TFrmCad.MaskedImage3Click(Sender: TObject);
+begin
+ FrmCad.Close;
+end;
 
 end.

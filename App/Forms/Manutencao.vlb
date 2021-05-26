@@ -1,3 +1,9 @@
 ﻿[FrmCadFun.FDMemTable1]
 Visible=False
 
+[FrmCadFun.DataSource1]
+Visible=False
+
+[DmTabela.cdsFunc]
+Visible=False
+

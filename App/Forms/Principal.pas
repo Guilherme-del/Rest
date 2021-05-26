@@ -19,11 +19,9 @@ interface
       ALRectangle2: TALRectangle;
       Button1: TButton;
       Bottom: TALLayout;
-      Right: TALLayout;
-      Sair: TMaskedImage;
-      btnSair: TButton;
-      procedure btnSairClick(Sender: TObject);
+    MaskedImage1: TMaskedImage;
       procedure Button1Click(Sender: TObject);
+    procedure MaskedImage1Click(Sender: TObject);
 
       private
         { Private declarations }
@@ -40,8 +38,14 @@ implementation
 
   uses MainFrame, FrmcadFunc, Cadastros, DmTabelas, Manutencao;
 
-  procedure TfrmPrincipal.btnSairClick(Sender: TObject);
+  procedure TfrmPrincipal.Button1Click(Sender: TObject);
     begin
+      Application.CreateForm(TfrmmainFrame, frmMainFrame);
+      frmMainFrame.Show;
+    end;
+
+procedure TfrmPrincipal.MaskedImage1Click(Sender: TObject);
+begin
       MessageDlg('Deseja sair do app ?',
         System.UITypes.TMsgDlgType.mtInformation,
         [System.UITypes.TMsgDlgBtn.mbYes, System.UITypes.TMsgDlgBtn.mbNo], 0,
@@ -56,12 +60,6 @@ implementation
                 Show;
             end;
           end);
-    end;
-
-  procedure TfrmPrincipal.Button1Click(Sender: TObject);
-    begin
-      Application.CreateForm(TfrmmainFrame, frmMainFrame);
-      frmMainFrame.Show;
-    end;
+end;
 
 end.

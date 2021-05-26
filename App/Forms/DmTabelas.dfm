@@ -1,27 +1,7 @@
 object DmTabela: TDmTabela
   OldCreateOrder = False
-  Height = 331
-  Width = 580
-  object BindingsList1: TBindingsList
-    Methods = <>
-    OutputConverters = <>
-    Left = 28
-    Top = 29
-  end
-  object RESTResponseDataSetAdapter1: TRESTResponseDataSetAdapter
-    FieldDefs = <>
-    Response = RESTResponse1
-    Left = 240
-    Top = 104
-  end
-  object RESTRequest1: TRESTRequest
-    Client = RESTClient1
-    Params = <>
-    Response = RESTResponse1
-    SynchronizedEvents = False
-    Left = 112
-    Top = 48
-  end
+  Height = 361
+  Width = 626
   object RESTClient1: TRESTClient
     Authenticator = HTTPBasicAuthenticator1
     Accept = 'application/json, text/plain; q=0.9, text/html;q=0.8,'
@@ -29,16 +9,96 @@ object DmTabela: TDmTabela
     Params = <>
     HandleRedirects = True
     RaiseExceptionOn500 = False
-    Left = 64
+    Left = 368
+    Top = 40
+  end
+  object RESTRequest1: TRESTRequest
+    Client = RESTClient1
+    Params = <>
+    Response = RESTResponse1
+    SynchronizedEvents = False
+    Left = 504
     Top = 104
   end
   object RESTResponse1: TRESTResponse
-    ContentType = 'text/html'
-    Left = 80
-    Top = 168
+    Left = 368
+    Top = 104
+  end
+  object RESTResponseDataSetAdapter1: TRESTResponseDataSetAdapter
+    Dataset = cdsFunc
+    FieldDefs = <>
+    ResponseJSON = RESTResponse1
+    Left = 136
+    Top = 288
   end
   object HTTPBasicAuthenticator1: THTTPBasicAuthenticator
-    Left = 352
-    Top = 64
+    Username = 'SYSDBA'
+    Password = 'masterkey'
+    Left = 504
+    Top = 40
+  end
+  object cdsFunc: TClientDataSet
+    Aggregates = <>
+    AggregatesActive = True
+    FilterOptions = [foCaseInsensitive]
+    FieldDefs = <>
+    IndexDefs = <>
+    Params = <>
+    ProviderName = 'DataSetProvider1'
+    StoreDefs = True
+    Left = 24
+    Top = 288
+    object cdsFuncID: TWideStringField
+      FieldName = 'ID'
+      Size = 255
+    end
+    object cdsFuncNOME: TWideStringField
+      FieldName = 'NOME'
+      Size = 255
+    end
+    object cdsFuncCNPJ: TWideStringField
+      FieldName = 'CNPJ'
+      Size = 255
+    end
+    object cdsFuncLOGRADOURO: TWideStringField
+      FieldName = 'LOGRADOURO'
+      Size = 255
+    end
+    object cdsFuncCIDADE: TWideStringField
+      FieldName = 'CIDADE'
+      Size = 255
+    end
+    object cdsFuncBAIRRO: TWideStringField
+      FieldName = 'BAIRRO'
+      Size = 255
+    end
+    object cdsFuncESTADO: TWideStringField
+      FieldName = 'ESTADO'
+      Size = 255
+    end
+    object cdsFuncCEP: TWideStringField
+      FieldName = 'CEP'
+      Size = 255
+    end
+    object cdsFuncTELEFONE: TWideStringField
+      FieldName = 'TELEFONE'
+      Size = 255
+    end
+    object cdsFuncCONTATO: TWideStringField
+      FieldName = 'CONTATO'
+      Size = 255
+    end
+    object cdsFuncIE: TWideStringField
+      FieldName = 'IE'
+      Size = 255
+    end
+    object cdsFuncCOMPLEMENTO: TWideStringField
+      FieldName = 'COMPLEMENTO'
+      Size = 255
+    end
+    object cdsFuncNUMERO: TWideStringField
+      FieldName = 'NUMERO'
+      Size = 255
+    end
   end
 end
